@@ -4,7 +4,7 @@ const dotenv = require('dotenv')
 const cors = require('cors')
 const bodyParser = require('body-parser');
 const { google } = require('googleapis');
-const OAuth2 = google.auth.oAuth2;
+const OAuth2 = google.auth.OAuth2;
 const nodemailer = require('nodemailer');
 dotenv.config()
 
