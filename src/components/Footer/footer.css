@@ -1,0 +1,29 @@
+.footright img{
+	margin-top: 15px;
+	width: 100px;
+}
+.footright{
+    text-align: center;
+    width: 100px;
+    bottom: 30px;
+    right: -30px;
+    position: fixed;
+    z-index: 50;
+}
+
+ion-icon {
+    color: #aae9d0bb;
+  }
+
+ion-icon:hover {
+    color: #46a57f;
+  }
+
+@media only screen and (min-width: 650px) {
+.footright{
+    text-align: right;
+        width: 100px;
+        bottom: 60px;
+        right: 20px;
+    }
+}

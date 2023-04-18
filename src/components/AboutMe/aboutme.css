@@ -1,0 +1,47 @@
+.about-me {
+    margin:0;
+    z-index: 50;
+}
+
+.about-me h2 {
+    font-size: 5vh;
+}
+
+.about-me p {
+    font-size: 6vw;
+}
+
+.about-me-text {
+    color: #edfdf8;
+    padding: 7% 7%;
+    width: 100%;
+    margin: 0% auto 0%;
+    position: relative;
+    background-color: #74ac957c;
+    text-shadow: 1px 1px 1px rgb(53, 78, 68);
+}
+
+@media only screen and (min-width: 650px) {
+
+    .about-me {
+        padding: 0% 20%;
+    }
+
+    .about-me h2 {
+        font-size: 4vw;
+    }
+
+    .about-me p {
+        font-size: 2.2vw;
+    }
+
+   .about-me-text {
+    color: #edfdf8;
+    padding: 8% 8%;
+    width: 100%;
+    margin: 0% auto 4%;
+    position: relative;
+    background-color: #74ac957c;
+    text-shadow: 1px 1px 1px rgb(53, 78, 68);
+    } 
+}

@@ -1,0 +1,182 @@
+.contact-div {
+    color: #edfdf8;
+    padding: 5% 5% 2% 5%;
+    width: 100%;
+    margin: 10% auto 40%;
+    position: relative;
+    background-color: #74ac957c;
+    text-shadow: 1px 1px 1px #354e44;
+}
+
+.contact-div h3 {
+    font-size: 8.5vw;
+    margin-top: 7px;
+    color: #edfdf8;
+    text-shadow: 1px 1px 1px #354e44;
+}
+
+.input-field>label {
+    font-size: 1.5rem;
+}
+
+label.active  {
+  color: #fff !important;
+}
+.btn {
+  font: 400 16px 'Nunito', sans-serif;
+  text-shadow: 1px 1px 1px #354e44;
+  text-transform: none;
+}
+
+.btn:hover {
+  text-shadow: none;
+}
+
+input, textarea {
+  color: #edfdf8;
+  background-color: transparent !important;
+  text-shadow: 1px 1px 1px #354e44;
+  font: 400 16px 'Nunito', sans-serif;
+}
+
+  /* label color */
+  .input-field label {
+    color: #edfdf8;
+  }
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: #edfdf8;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #edfdf8;
+    box-shadow: 0 1px 0 0 #000;
+  }
+
+  .input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label {
+    color: #edfdf8;
+  }
+
+  input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+      border-bottom: 1px solid #548873;
+  }
+
+  input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+      border-bottom: 1px solid #46a57f;
+      box-shadow: 0 1px 0 0 #46a57f;
+      -webkit-box-shadow: 0 1px 0 0 #46a57f;
+  }
+
+  /* valid color */
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid #46a57f;
+    box-shadow: 0 1px 0 0 #46a57f;
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: 1px solid #ED5B46;
+    box-shadow: 0 1px 0 0 #ED5B46;
+  }
+
+  input.valid[type=email]:not(.browser-default) {
+    border-bottom: 1px solid #46a57f;
+    -webkit-box-shadow: 0 1px 0 0 #46a57f;
+    box-shadow: 0 1px 0 0 #46a57f;
+  }
+
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: #fff;
+  }
+
+  input[type=text]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+    margin: 8px 0px 8px 0;
+    font-size: 1.4rem;
+  }
+
+.btn-orange { 
+    color: #edfdf8;
+    background-color: #ED5B46;
+}
+
+.btn:hover {
+    color: #ED5B46;
+    background-color: #f7e06c
+}
+
+#toast-container {
+  top: auto !important;
+  right: auto !important;
+  bottom: 63%;
+  left:50%;
+  width: 100%;
+}
+
+.toast {
+  max-width: 42% !important;
+}
+
+.invalid-feedback {
+  background-color: #ED5B46;
+  color: #fff;
+  text-shadow: none;
+  text-transform: capitalize;
+  padding: 0px 10px 0px 10px;
+  width: fit-content;
+  -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.invalid-feedback-textarea {
+  background-color: #ED5B46;
+  color: #fff;
+  text-shadow: none;
+  text-transform: capitalize;
+  padding: 0px 10px 0px 10px;
+  width: fit-content;
+  -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  border-radius: 10px;
+  margin-top: -2px;
+}
+
+/**
+ * ----------------------------------------
+ * MEDIA QUERIES
+ * ----------------------------------------
+ */
+
+ @media only screen and (min-width: 650px) {
+
+  #toast-container {
+    top: auto !important;
+    right: auto !important;
+    bottom: 80%;
+    left: 60%;
+    width: 100%
+  }
+
+  .toast {
+    max-width: 13% !important;
+  }
+
+    .contact-div {
+        margin: 5% auto 14%;
+    }
+
+    .contact-div h3 {
+        font-size: 4vw;
+    }
+
+    .input-field>label {
+        font-size: 2.3rem;
+        line-height: 1.5rem;
+    }
+
+    input[type=text]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+      margin: 5px 0px 0px 0;
+      font-size: 1.7rem;
+    }
+ }

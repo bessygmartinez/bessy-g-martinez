@@ -1,0 +1,133 @@
+.work {
+    width: 100%;
+    position: relative;
+    margin-top: -213%;
+    background-color: transparent;
+    z-index: 1;
+    padding: 0 8% 0 8%;
+    text-align: center;
+    /* box-shadow: 0 0 150px #000000a6; */
+}
+
+.work h3 {
+    color: #edfdf8;
+    text-shadow: 1px 1px 3px rgb(53, 78, 68);
+
+}
+
+.workpic-div {
+    width: 200px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.workpic {
+    margin-top: 25px;
+    border: 1px solid #ddd
+}
+
+i.right {
+    cursor: pointer;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+    color: #ED5B46;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.card {
+    border-radius: 30px;
+}
+
+.card .card-action {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.card .card-image img {
+    border-radius: 15px;
+}
+
+.card .card-reveal {
+    border-radius: 15px;
+}
+
+.card .card-title {
+    font-size: 20px;
+}
+
+.card-reveal .card-title {
+    font-size: 20px;
+}
+
+.card-reveal p {
+    text-shadow: none;
+}
+
+.card .card-content {
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+    font-size: 20px;
+    text-transform: none;
+}
+
+.trans-bg {
+    background-color: #ffffffda;
+    /* background-color: #74ac957c; */
+}
+
+.collapsible.trans-bg {
+    background-color: #ffffff7a;
+}
+
+.collapsible {
+    border-top: 0px;
+    border-radius: 15px;
+}
+
+.collapsible-header {
+    border-radius: 15px;
+}
+
+.collapsible-body .row {
+    border-radius: 15px;
+}
+
+.keyboard-focused .collapsible-header:focus {
+    background-color: #fff;
+}
+
+table {
+    border-collapse: initial;
+}
+
+.collapsible-header .row {
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/**
+ * ----------------------------------------
+ * MEDIA QUERIES
+ * ----------------------------------------
+ */
+
+ @media only screen and (min-width: 650px) {
+     .work {
+         margin-top: -60%;
+     }
+
+     .work-row {
+         margin-top: 7%;
+     }
+
+     .work h3 {
+        font-size: 5vw;
+    }
+ }

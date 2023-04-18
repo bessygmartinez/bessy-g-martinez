@@ -1,13 +1,348 @@
 body {
+  background-color: #8BD0B4;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Nunito', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  color: #ED5B46;
+}
+
+a:hover {
+  color: #f7e06c;
+}
+
+p {
+  text-shadow: 1px 1px 3px rgb(53, 78, 68);
+}
+
+.container {
+  position: relative;
+  height: calc(100vh - 20px);
+  width: 100%;
+}
+
+.hero {
+    height: 100vh;
+    position: relative;
+}
+
+.sun {
+  display: inline;
+}
+
+/* .sun-mob {
+  display: inline;
+} */
+
+.sun-wrap {
+  position: fixed;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  margin-left: -222px;
+  margin-top: -200px;
+  -webkit-transform: translatey(0px);
+  transform: translatey(0px);
+  -webkit-animation: float 6s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
+  width: 450px;
+  height: 450px;
+  z-index: -100;
+  text-align: center;
+}
+
+.stop-flickering {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.words-div {
+  width: 100%;
+  padding-top: 29vh;
+  text-align: center;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.words-div h1 {
+  font-size: 5vh;
+  color: #edfdf8;
+}
+
+.greeny-text {
+  color: #D8EEE7;
+}
+
+.word {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  opacity: 0;
+  text-shadow: 3px 3px 7px rgb(53, 78, 68);
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float:none;
+  -webkit-transform: translateZ(25px);
+          transform: translateZ(25px);
+  -webkit-transform-origin: 50% 50% 25px;
+          transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+}
+
+.letter.in {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  -webkit-transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.scroll-down {
+  color: #D8EEE7;
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  margin-left: -38px;
+  width: fit-content;
+  height: 48px;
+  z-index: -550;
+}
+
+.scroll-down.bounce-top small {
+  margin-left: 10%;
+}
+
+.hide-me
+{
+    opacity:0;
+}
+
+.bg-clouds {
+  width: 200x;
+  height: 300px;
+  position: fixed;
+}
+
+.bg-cloud1 {
+  top: 170px;
+  z-index: -200;
+  fill: #eeeeee2f;
+  /* Animation shorthand syntax order: name, duration, timing-function, delay, iteration-count, direction, fill-mode */
+  -webkit-animation: move 22s linear infinite;
+  -moz-animation: move 22s linear infinite;
+  -o-animation: move 22s linear infinite;
+  animation: move 22s linear infinite;
+}
+
+.bg-cloud2 {
+  top: 0px;
+  z-index: -200;
+  fill: #eeeeee7a;
+  -webkit-animation: move 38s linear 17s infinite backwards;
+  -moz-animation: move 38s linear 17s infinite backwards;
+  -o-animation: move 38s linear 17s infinite backwards;
+  animation: move 38s linear 17s infinite backwards;
+}
+
+.bg-cloud3 {
+  top: 400px;
+  z-index: -200;
+  fill: #eeeeeece;
+  /* Animation shorthand syntax order: name, duration, timing-function, delay, iteration-count, direction, fill-mode */
+  -webkit-animation: move 47s linear infinite;
+  -moz-animation: move 47s linear infinite;
+  -o-animation: move 47s linear infinite;
+  animation: move 47s linear infinite;
+}
+
+@keyframes move {
+  from {-webkit-transform: translateX(-400px);}
+  to {-webkit-transform: translateX(1350px);}
+}
+
+@keyframes fadeIn{
+    0% {
+        opacity:0;
+        transform:  translate(0px,40px)  ;
+    }
+    100% {
+        opacity:1;
+        transform:  translate(0px,0px)  ;
+    }
+}
+
+@-moz-keyframes fadeIn{
+    0% {
+        opacity:0;
+        -moz-transform:  translate(0px,40px)  ;
+    }
+    100% {
+        opacity:1;
+        -moz-transform:  translate(0px,0px)  ;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity:0;
+        -webkit-transform:  translate(0px,40px)  ;
+    }
+    100% {
+        opacity:1;
+        -webkit-transform:  translate(0px,0px)  ;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity:0;
+        -o-transform:  translate(0px,40px)  ;
+    }
+    100% {
+        opacity:1;
+        -o-transform:  translate(0px,0px)  ;
+    }
+}
+ 
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+ 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+ 
+	-webkit-animation-duration:0.5s;
+	-moz-animation-duration:0.5s;
+	animation-duration:0.5s;
+}
+
+@media only screen and (min-width: 650px) {
+
+  .words-div {
+    padding-top: 33vh;
+  }
+  .words-div h1 {
+    font-size: 6vw;
+    position: relative;
+  }
+
+  .sun {
+    display: inline;
+  }
+  
+  .sun-mob {
+    display: none;
+  }
+
+.container {
+  width: 100%;
+}
+
+.scroll-down {
+    bottom: 100px;
+    left: 50%;
+    margin-left: -38px;
+    width: fit-content;
+    height: 48px;
+}
+
+.scroll-down.bounce-top small {
+  margin-left: 15%;
+}
+}
+
+.scroll-down.bounce-top {
+  animation:bounce-top 2.5s ease-in infinite alternate-reverse both
+}
+
+/**float**/
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+/**arrow bounce-top**/
+
+@keyframes bounce-top {
+  0% {
+    transform:translateY(-45px);
+    animation-timing-function:ease-in;
+    opacity:1
+  }
+  24% {
+    opacity:1
+  }
+  40% {
+    transform:translateY(-24px);
+    animation-timing-function:ease-in
+  }
+  65% {
+    transform:translateY(-12px);
+    animation-timing-function:ease-in
+  }
+  82% {
+    transform:translateY(-6px);
+    animation-timing-function:ease-in
+  }
+  93% {
+    transform:translateY(-4px);
+    animation-timing-function:ease-in
+  }
+  25%,55%,75%,87% {
+    transform:translateY(0);
+    animation-timing-function:ease-out
+  }
+  100% {
+    transform:translateY(0);
+    animation-timing-function:ease-out;
+    opacity:1
+  }
 }

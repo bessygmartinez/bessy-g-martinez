@@ -1,0 +1,293 @@
+.bottom-dirt {
+    position: relative;
+    bottom: 0;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    background-color: #907F60;
+    margin-top: 0px;
+}
+
+.bottom-dirt.row {
+    margin-bottom: 0px;
+}
+
+.bottom-dirt p {
+    margin-bottom: 0px;
+}
+
+.flower1-animation {
+
+        -webkit-animation: wind-five 2.5s ease alternate infinite;
+        animation: wind-five 2.5s ease alternate infinite;
+        transform: rotate(-0.5deg);
+        transform-origin: 75% 100% ;
+        }
+
+.flower-center {
+  width: 1.75em;
+  height: 1.75em;
+  border-radius: 50%;
+  background: #f7e06c;
+  position: absolute;
+  z-index: 1;
+  top: -12em;
+  left: 15em;
+}
+.petal {
+    width: 1.75em;
+    height: 1.75em;
+    border-radius: 50%;
+    background: #ED5B46;
+    position: absolute;
+  }
+  .petal1 {
+    top: -13.2em;
+    left: 15em;
+  }
+  .petal2 {
+    top: -12.5em;
+    left: 16.3em;
+  }
+  .petal3 {
+    top: -11em;
+    left: 16em;
+  }
+  .petal4 {
+    top: -11em;
+    left: 14.2em;
+  }
+  .petal5 {
+    top: -12.5em;
+    left: 13.8em;
+  }
+  .stem {
+    width: 0.3em;
+    height: 8em;
+    background: #03bd72;
+    position: absolute;
+    top: -10.5em;
+    left: 15.8em;
+  }
+  .leaf {
+    position: absolute;
+    width: 2.5em;
+    height: 1.2em;
+    background: #03bd72;
+    border-radius: 0 100% 0 100%;
+    top: -8em;
+  }
+  .leaf-right {
+    left: 15.7em;
+    -webkit-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+  }
+  .leaf-left {
+    left: 13.7em;
+    -webkit-transform: scale(1, -1) rotate(-60deg);
+            transform: scale(1, -1) rotate(-60deg);
+  }
+
+.grass {
+    position: absolute;
+    /*   display: inline-block; */
+    bottom: 2rem;
+    width: 101%;
+    height: 8rem;
+    overflow: hidden;
+    margin-left: -13px;
+  /*     opacity:0; */
+  }
+  
+  .blade {
+    height: 6rem;
+    width: 1rem;
+  /*   background-image: url("https://www.transparenttextures.com/patterns/cardboard.png"); */
+    background-size: 300px 300px;
+    background-color: #25ce8a;
+    border-radius: 100% 0 50% 0;
+    float: left;
+    transform-origin: 50% 100%;
+    margin-top: 2rem;
+    margin-left: -0.5rem;
+  /*   box-shadow: rgba(0,0,0, 0.25) 0.25rem 1rem 0.25rem; */
+  }
+  
+  .blade:nth-of-type(2n) {
+    width: 0.75rem;
+    transform: rotate(10deg);
+    height: 5rem;
+    margin-top: 3rem;
+  }
+  
+  .blade:nth-of-type(3n) {
+    background-color: #03bd72;
+    border-radius: 0 100% 0 50%;
+    height: 7rem;
+    margin-top: 1rem;
+    /*   transform: rotate(-10deg); */
+  }
+  
+  .blade:nth-of-type(4n) {
+    border-radius: 0 100% 0 50%;
+    transform: rotate(-8deg);
+  }
+  
+  .blade:nth-of-type(5n) {
+    transform: rotate(4deg);
+    border-radius: 0 100% 0 50%;
+  
+  }
+  
+  .blade:nth-of-type(6n) {
+  }
+  
+  .blade:nth-of-type(7n) {
+    background-color: #68af93;
+    border-radius: 100% 0 50% 0;
+            animation: wind-seven 7s ease alternate infinite;
+    
+  }
+  
+  .blade:nth-of-type(8n) {
+  }
+  
+  .blade:nth-of-type(9n) {
+    background-color: #46a57f;
+      animation: wind-three 7s ease alternate infinite;
+  }
+  
+  .blade:nth-of-type(13n) {
+    background-color: #62caa1;
+    height: 7.5rem;
+    margin-top: 0.5rem;
+  
+  }
+  
+  .blade:nth-of-type(16n) {
+    width: 0.5rem;
+    transform: rotate(-5deg);
+    height: 8rem;
+    margin-top: 0;
+    animation: wind-five 7s ease alternate infinite;
+  }
+  
+  .blade:nth-of-type(24n) {
+    transform: rotate(12deg);
+    height: 7.5rem;
+    margin-top: 0.5;
+  
+  }
+
+  @keyframes wind-three {
+    100% {
+      transform: rotate(5deg);
+    }
+  }
+  
+  @keyframes wind-five {
+    100% {
+      transform: rotate(3deg);
+    }
+  }
+  
+  @keyframes wind-seven {
+    100% {
+      transform: rotate(7deg);
+    }
+  }
+
+/**
+ * ----------------------------------------
+ * animation shake-horizontal
+ * ----------------------------------------
+ */
+ @-webkit-keyframes shake-horizontal {
+    0%,
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
+    }
+    80% {
+      -webkit-transform: translateX(8px);
+              transform: translateX(8px);
+    }
+    90% {
+      -webkit-transform: translateX(-8px);
+              transform: translateX(-8px);
+    }
+  }
+  @keyframes shake-horizontal {
+    0%,
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
+    }
+    80% {
+      -webkit-transform: translateX(8px);
+              transform: translateX(8px);
+    }
+    90% {
+      -webkit-transform: translateX(-8px);
+              transform: translateX(-8px);
+    }
+  }
+  
+  @media only screen and (min-width: 650px) {
+
+    .flower-center {
+        left: 65em;
+      }
+
+        .petal1 {
+          left: 65em;
+        }
+        .petal2 {
+          left: 66.3em;
+        }
+        .petal3 {
+          left: 66em;
+        }
+        .petal4 {
+          left: 64.2em;
+        }
+        .petal5 {
+          left: 63.8em;
+        }
+        .stem {
+          left: 65.8em;
+        }
+        .leaf-right {
+          left: 65.7em;
+        }
+        .leaf-left {
+          left: 63.7em;
+
+        }
+
+  }
